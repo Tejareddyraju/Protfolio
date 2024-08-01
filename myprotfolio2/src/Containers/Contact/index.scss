@@ -1,0 +1,79 @@
+.contact{
+    &-content{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0 10px;
+        &-header{
+            display: inline-block;
+            color: var(--yellow--theme-sub-text-color);
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-bottom: 2px solid var(--yellow--theme-main-color);
+        }
+        &-header::before,&-header::after{
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 5px;
+            background-color: var(--yellow--theme-main-color);
+            bottom: -1px;
+        }
+        &-header::before{
+            left: 0;
+        }
+        &-header::after{
+            right: 0;
+          
+        }
+        &-form{
+            h2{
+                
+                color: white;
+                margin-top: 2%;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            textarea{
+              margin-top: 2%;
+              width: 450px;
+              height: 120px;
+              padding: 5px;
+              overflow-y: hidden;
+              border: 1px solid var(--yellow--theme-main-color);
+              outline: none;
+              font-size: 16px;
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              color: black;
+              background: var(--yellow--theme-sub-text-color);
+            }
+          }
+          &-buttons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 1%;
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: 120px;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                background-color: var(--yellow--theme-main-color);
+            }
+        }
+    }
+ 
+    
+}
